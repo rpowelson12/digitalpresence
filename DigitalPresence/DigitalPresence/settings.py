@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-su+1u7n)pj1ydr4=g_l$^w*(*8=j5#09q)7wfl#eubnn279%tx'
+SECRET_KEY = 'django-insecure-wbl5tywmst%cj146ji8agi3$yz#^(7#g2yvh+by5#mn*^&5*c$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,10 +37,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'DigitalPresence',
+    'accounts',
+    'crispy_forms', 
+    'tailwind',
+    'theme',
+    'django_browser_reload',
 ]
+
+CRISPY_TEMPLATE_PACK = 'crispy-tailwind'
+
+TAILWIND_APP_NAME = 'theme'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
