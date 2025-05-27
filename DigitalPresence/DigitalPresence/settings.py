@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'DigitalPresence',
     'accounts',
+    'core',
     'crispy_forms', 
     'tailwind',
     'theme',
