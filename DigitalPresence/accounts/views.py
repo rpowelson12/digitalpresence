@@ -22,6 +22,7 @@ def signup(request):
         'form': form,
     })
 
+
 def pricing(request):
     return render(request, 'accounts/pricing.html')
 
