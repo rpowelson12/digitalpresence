@@ -27,8 +27,8 @@ def pricing(request):
 
 def dashboard(request):
     if request.user.is_authenticated:
-        username = request.user.username
-        context = {'username': username}
+        first_name = request.user.first_name
+        context = {'first_name': first_name}
 
     else:
         context = {'username': "Guest"}
