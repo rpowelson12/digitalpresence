@@ -2,7 +2,14 @@
 {% block title %}Dashboard{% endblock title %}
 {% block content %}
 
+{% if first_name != "" %}
+
 <p>Hello, {{ first_name }}</p>
-dashboard.html
+dashboard.html with first name
+
+{% else %}
+<p>Hello!</p>
+dashboard.html without first name
+{% endif %}
 
 {% endblock content %}

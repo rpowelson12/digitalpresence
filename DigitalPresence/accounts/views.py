@@ -26,11 +26,3 @@ def signup(request):
 def pricing(request):
     return render(request, 'accounts/pricing.html')
 
-def dashboard(request):
-    if request.user.is_authenticated:
-        first_name = request.user.first_name
-        context = {'first_name': first_name}
-
-    else:
-        context = {'username': "Guest"}
-    return render(request, 'accounts/dashboard.html', context)

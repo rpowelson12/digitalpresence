@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts',
     'core',
     'crispy_forms', 
+    'dashboard',
     'tailwind',
     'theme',
     'django_browser_reload',
